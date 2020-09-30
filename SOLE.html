@@ -3,8 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="search.js"></script>
   </head>
   <body>
+    <div id="search-div" style="display: none;">
+      <form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search..." />
+        <input type="submit" value="Go" />
+      </form>
+    </div>
+    <div id="content">
 
 <h1>SOLE</h1>
 
@@ -12,5 +20,34 @@
 <p>SOLE (Science Object Linking and Embedding) presents documents in HTML format, where users associate sets of words in the document with tags, and each tag refers to a URL specification of a science object: a science object, in this case, can be source code, a dataset repository, an annotated PDF file, or a virtual machine image that can be deployed in the cloud by using package managers, e.g., packing tools and configuration management tools.</p>
 <p><a href="https://github.com/remram44/repromatch-new/blob/master/tools/SOLE.txt">Edit this entry on GitHub</a></p>
 
+    </div>
+    <div id="search-results" style="display: none;">
+      <h1>Search results</h1>
+      <ul id="search-results-list"></ul>
+    </div>
+    <script>
+var searchForm = document.getElementById('search-div').style.display = '';
+document.getElementById('search-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  console.log('searching: ', document.getElementById('search-bar').value);
+  var hits = search(document.getElementById('search-bar').value);
+  console.log('hits: ', hits);
+  if(hits !== undefined) {
+    document.getElementById('content').style.display = 'none';
+    document.getElementById('search-results').style.display = '';
+    var results = document.getElementById('search-results-list');
+    if(hits.length === 0) {
+      results.innerHTML = '<li>No results</li>';
+    } else {
+      results.innerHTML = '';
+      for(var i = 0; i < hits.length; ++i) {
+        var elem = document.createElement('li');
+        elem.innerHTML = '<a href="' + hits[i] + '.html">' + hits[i] + '</a>';
+        results.appendChild(elem);
+      }
+    }
+  }
+});
+    </script>
   </body>
 </html>

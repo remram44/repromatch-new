@@ -3,8 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="search.js"></script>
   </head>
   <body>
+    <div id="search-div" style="display: none;">
+      <form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search..." />
+        <input type="submit" value="Go" />
+      </form>
+    </div>
+    <div id="content">
 
 <h1>figshare</h1>
 
@@ -14,5 +22,34 @@
 <p>figshare is a repository on the Web where scientists can upload and share their research data. Every asset automatically receives a DOI which allows persistent data citation. figshare also encourages the publication of negative data (i.e., negative results or results that were not planned to be published), which are also citable, to help understand the entire reasoning behind the experiment.</p>
 <p><a href="https://github.com/remram44/repromatch-new/blob/master/tools/figshare.txt">Edit this entry on GitHub</a></p>
 
+    </div>
+    <div id="search-results" style="display: none;">
+      <h1>Search results</h1>
+      <ul id="search-results-list"></ul>
+    </div>
+    <script>
+var searchForm = document.getElementById('search-div').style.display = '';
+document.getElementById('search-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  console.log('searching: ', document.getElementById('search-bar').value);
+  var hits = search(document.getElementById('search-bar').value);
+  console.log('hits: ', hits);
+  if(hits !== undefined) {
+    document.getElementById('content').style.display = 'none';
+    document.getElementById('search-results').style.display = '';
+    var results = document.getElementById('search-results-list');
+    if(hits.length === 0) {
+      results.innerHTML = '<li>No results</li>';
+    } else {
+      results.innerHTML = '';
+      for(var i = 0; i < hits.length; ++i) {
+        var elem = document.createElement('li');
+        elem.innerHTML = '<a href="' + hits[i] + '.html">' + hits[i] + '</a>';
+        results.appendChild(elem);
+      }
+    }
+  }
+});
+    </script>
   </body>
 </html>

@@ -3,8 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="search.js"></script>
   </head>
   <body>
+    <div id="search-div" style="display: none;">
+      <form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search..." />
+        <input type="submit" value="Go" />
+      </form>
+    </div>
+    <div id="content">
 
 <h1>Sumatra</h1>
 
@@ -16,5 +24,34 @@
 <p>Sumatra is a Python library and tool that manages and tracks projects by capturing and maintaining information about each run of the experiment. Sumatra requires knowledge of the programming language to get library dependencies. In addition, users need to configure the location of input and output files, and for experiments that use or support Python scripting, there is an API that includes capture within the code based on user-defined annotations.</p>
 <p><a href="https://github.com/remram44/repromatch-new/blob/master/tools/Sumatra.txt">Edit this entry on GitHub</a></p>
 
+    </div>
+    <div id="search-results" style="display: none;">
+      <h1>Search results</h1>
+      <ul id="search-results-list"></ul>
+    </div>
+    <script>
+var searchForm = document.getElementById('search-div').style.display = '';
+document.getElementById('search-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  console.log('searching: ', document.getElementById('search-bar').value);
+  var hits = search(document.getElementById('search-bar').value);
+  console.log('hits: ', hits);
+  if(hits !== undefined) {
+    document.getElementById('content').style.display = 'none';
+    document.getElementById('search-results').style.display = '';
+    var results = document.getElementById('search-results-list');
+    if(hits.length === 0) {
+      results.innerHTML = '<li>No results</li>';
+    } else {
+      results.innerHTML = '';
+      for(var i = 0; i < hits.length; ++i) {
+        var elem = document.createElement('li');
+        elem.innerHTML = '<a href="' + hits[i] + '.html">' + hits[i] + '</a>';
+        results.appendChild(elem);
+      }
+    }
+  }
+});
+    </script>
   </body>
 </html>

@@ -3,8 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="search.js"></script>
   </head>
   <body>
+    <div id="search-div" style="display: none;">
+      <form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search..." />
+        <input type="submit" value="Go" />
+      </form>
+    </div>
+    <div id="content">
 
 <h1>Burrito</h1>
 
@@ -16,5 +24,34 @@
 <p>The Burrito system is a Linux-based provenance collection and note-taking tool that runs in the background of the operating system. While in the background, Burrito collects system-level provenance from every computational process running in the operating system. In addition, it captures information regarding GUI window interactions and uses a versioning file system to preserve a complete history of the system.</p>
 <p><a href="https://github.com/remram44/repromatch-new/blob/master/tools/Burrito.txt">Edit this entry on GitHub</a></p>
 
+    </div>
+    <div id="search-results" style="display: none;">
+      <h1>Search results</h1>
+      <ul id="search-results-list"></ul>
+    </div>
+    <script>
+var searchForm = document.getElementById('search-div').style.display = '';
+document.getElementById('search-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  console.log('searching: ', document.getElementById('search-bar').value);
+  var hits = search(document.getElementById('search-bar').value);
+  console.log('hits: ', hits);
+  if(hits !== undefined) {
+    document.getElementById('content').style.display = 'none';
+    document.getElementById('search-results').style.display = '';
+    var results = document.getElementById('search-results-list');
+    if(hits.length === 0) {
+      results.innerHTML = '<li>No results</li>';
+    } else {
+      results.innerHTML = '';
+      for(var i = 0; i < hits.length; ++i) {
+        var elem = document.createElement('li');
+        elem.innerHTML = '<a href="' + hits[i] + '.html">' + hits[i] + '</a>';
+        results.appendChild(elem);
+      }
+    }
+  }
+});
+    </script>
   </body>
 </html>
