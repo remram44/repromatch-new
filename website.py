@@ -1,4 +1,6 @@
+import hashlib
 import jinja2
+import json
 import logging
 import markdown
 import os
@@ -29,6 +31,9 @@ def main():
     # Categories
     capture = []
     sharing = []
+
+    # Search index
+    search_index = {}
 
     # Process each tool file
     tool_template = template_env.get_template('tool.html')
@@ -75,7 +80,18 @@ def main():
             if meta.get('experiment_sharing'):
                 sharing.append((tool_basename, None))
 
+            # Add to search index
+            keywords = {tool_basename}
+            if 'name' in meta:
+                keywords.add(meta['name'])
+                for word in meta['name'].split():
+                    keywords.add(word)
+            keywords = {keyword.lower() for keyword in keywords}
+            for keyword in keywords:
+                search_index.setdefault(keyword, []).append(tool_basename)
+
     # Generate category pages
+    logger.info("Creating category pages")
     category_template = template_env.get_template('category.html')
     with open(os.path.join(output_dir, 'capture.html'), 'w') as f_out:
         f_out.write(category_template.render(
@@ -89,9 +105,51 @@ def main():
         ))
 
     # Generate index
+    logger.info("Creating index page")
     index_template = template_env.get_template('index.html')
     with open(os.path.join(output_dir, 'index.html'), 'w') as f_out:
         f_out.write(index_template.render())
+
+    # Remove previous search indexes
+    logger.info("Generating search index")
+    for name in os.listdir(output_dir):
+        if name.startswith('search-index') and name.endswith('.js'):
+            os.remove(os.path.join(output_dir, name))
+
+    # Generate search index
+    search_index = sorted(
+        (keyword, sorted(tools))
+        for keyword, tools in search_index.items()
+    )
+    with open(os.path.join(output_dir, 'search-index.js'), 'w') as f_out:
+        f_out = HashedFile(f_out)
+        f_out.write('{')
+        first = True
+        for keyword, tools in search_index:
+            if not first:
+                f_out.write(',')
+            else:
+                first = False
+            f_out.write('%s: %s' % (json.dumps(keyword), json.dumps(tools)))
+        f_out.write('}')
+    search_index_file = 'search-index.%s.js' % f_out.hexdigest()[:8]
+    os.rename(
+        os.path.join(output_dir, 'search-index.js'),
+        os.path.join(output_dir, search_index_file),
+    )
+
+
+class HashedFile(object):
+    def __init__(self, fp):
+        self._fp = fp
+        self._hash = hashlib.sha1()
+
+    def write(self, buf):
+        self._hash.update(buf.encode('utf-8'))
+        return self._fp.write(buf)
+
+    def hexdigest(self):
+        return self._hash.hexdigest()
 
 
 if __name__ == '__main__':
