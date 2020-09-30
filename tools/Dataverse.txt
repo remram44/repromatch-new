@@ -1,0 +1,32 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: true
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: Dataverse
+paper: http://dialnet.unirioja.es/servlet/articulo?codigo=3742561
+portability: NONE
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: dataverse
+source: https://github.com/IQSS/dataverse
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: http://dataverse.org/
+-----
+
+The Dataverse Network is a repository for sharing, citing, and archiving all research data. It offers a central infrastructure to upload data in all file types (e.g., datasets, documentation, and code), also supporting backups, recovery, data discovery and cataloging, metadata extraction, and preservation.

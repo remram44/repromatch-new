@@ -1,0 +1,32 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+longevity: true
+longevity_archiving: true
+longevity_note: Depends on the commercial provider to maintain the infrastructure
+  running in a long-term basis.
+longevity_upgrading: false
+modifiability: false
+name: Amazon Web Services
+portability: HIGH
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: amazon-web-services
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: http://aws.amazon.com/
+-----
+
+Amazon Web Services (AWS) is a collection of remote computing services, also called web services, that make up a cloud computing platform offered by Amazon.com.

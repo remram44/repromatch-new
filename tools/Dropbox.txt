@@ -1,0 +1,31 @@
+capture: true
+capture_code: false
+capture_data: true
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: true
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: Dropbox
+portability: NONE
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: dropbox
+supports_linux: true
+supports_note: Dropbox has Desktop applications for all the platforms.
+supports_osx: true
+supports_web_based: true
+supports_windows: true
+website: http://www.dropbox.com/
+-----
+
+Dropbox provide both a repository and the ability to synchronize files across different platforms,

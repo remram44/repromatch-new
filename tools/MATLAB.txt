@@ -1,0 +1,31 @@
+capture: true
+capture_code: true
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: false
+document_linkage_inline: true
+document_linkage_note: Users can also create notebooks using Microsoft Word.
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: MATLAB
+portability: HIGH
+replicability: true
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: matlab
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: http://se.mathworks.com/products/matlab/
+-----
+
+MATLAB (matrix laboratory) is a multi-paradigm numerical computing environment and fourth-generation programming language. Developed by MathWorks, MATLAB allows matrix manipulations, plotting of functions and data, implementation of algorithms, creation of user interfaces, and interfacing with programs written in other languages, including C, C++, Java, Fortran and Python. Users can also create notebooks using Microsoft Word.

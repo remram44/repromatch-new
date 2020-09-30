@@ -1,0 +1,33 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_note: DEEP tracks the provenance of the dynamic contents of the document,
+  although it is not attached to a workflow engine.
+capture_os: false
+capture_workflow: true
+document_linkage: true
+document_linkage_by_reference: false
+document_linkage_inline: true
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: DEEP
+paper: http://link.springer.com/chapter/10.1007/978-3-642-34222-6_3
+portability: HIGH
+replicability: true
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: deep
+supports_linux: false
+supports_note: Not clear which operating systems the tool supports.
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+-----
+
+In the DEEP (Documents with Embedded Execution and Provenance) environment, a document is represented in HTML format with inline document linkage: the document is composed of “activity regions”, which are the active and executable parts of the document that can be triggered by user input. The DEEP server is responsible to maintain all the resources and to initiate the execution engine for the activity regions.

@@ -1,0 +1,35 @@
+capture: true
+capture_code: true
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: RDataTracker
+paper: https://www.usenix.org/system/files/conference/tapp2014/tapp14_paper_lerner.pdf
+portability: LOW
+replicability: true
+replicability_note: The tool allows users to re-execute parts of the R script, and
+  also to create checkpoints and restore previous versions.
+representation: true
+representation_descriptive_only: true
+representation_executable: false
+representation_note: RDataTracker creates a provenance graph (DDG) from the execution
+  that can be analyzed.
+slug: rdatatracker
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: https://github.com/blernermhc/RDataTracker
+-----
+
+RDataTracker is a library of R functions that can be used to collect data provenance in the form of a Data Derivation Graph (DDG) during R console sessions or when executing an R script.

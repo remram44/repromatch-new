@@ -1,0 +1,34 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: true
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: true
+longevity_archiving: true
+longevity_upgrading: false
+modifiability: false
+name: CARE
+paper: http://dl.acm.org/citation.cfm?id=2618138
+portability: MEDIUM
+portability_note: CARE has a feature known as enhanced kernel compatibility that allows,
+  within certain limits, running an experiment on a kernel older than the one used
+  in the original implementation.
+replicability: true
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: care
+supports_linux: true
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+website: http://reproducible.io/
+-----
+
+CARE monitors the execution of the specified command to create an archive that contains all the material required to re-execute it in the same context. That way, the command will be reproducible everywhere, even on Linux systems that are supposed to be not compatible with the original Linux system.

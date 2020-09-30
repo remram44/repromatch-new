@@ -1,0 +1,30 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: true
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: GitHub
+portability: NONE
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: github
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: https://github.com/
+-----
+
+GitHub is a web-based Git repository hosting service.

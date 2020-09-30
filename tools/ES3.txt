@@ -1,0 +1,32 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: true
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: ES3
+paper: http://onlinelibrary.wiley.com/doi/10.1002/cpe.1247/full
+portability: NONE
+replicability: false
+representation: true
+representation_descriptive_only: true
+representation_executable: false
+representation_note: The tool generates provenance graphs.
+slug: es3
+supports_linux: true
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+website: http://people.eri.ucsb.edu/~es3/public/new/htdocs/projects/proj-essw.htm
+-----
+
+The ES3 (Earth System Science Server) project uses strace to monitor and gather operating system calls, constructing provenance graphs that describe the derivation of data products and that resemble workflow specifications. These graphs can then be queried to discover relevant information regarding the data objects.

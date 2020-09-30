@@ -1,0 +1,38 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+modifiability_note: Modifiability can be achieved by using makefiles.
+name: GNU Make
+portability: LOW
+portability_note: Makefiles can be re-compiled in the same machine to reproduce experiment
+  findings, but portability to other environments cannot be automatically guaranteed
+  without extra work, e.g., unless the user defines explicit commands to be executed
+  in different operating systems and hardware architectures.
+replicability: true
+replicability_note: Given a makefile, a user can re-execute the experiment.
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+representation_note: Makefiles can be used as an executable representation for the
+  experiment.
+slug: gnu-make
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: https://www.gnu.org/software/make/
+-----
+
+GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.

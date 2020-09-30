@@ -1,0 +1,32 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: false
+document_linkage_inline: true
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: Noweb
+paper: http://www.cs.tufts.edu/%7Enr/noweb/johnson-lj.pdf
+portability: LOW
+replicability: true
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: noweb
+source: ftp://www.eecs.harvard.edu/pub/nr
+supports_linux: true
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+website: http://www.cs.tufts.edu/~nr/noweb/
+-----
+
+Noweb supports a variety of text formats, such as TeX, LaTeX and HTML. However, there is no prettyprinting involved, i.e., no stylistic formatting supported (stylized fonts, mathematical symbols and indentations).

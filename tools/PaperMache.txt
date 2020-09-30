@@ -1,0 +1,31 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: true
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: true
+experiment_sharing_hosted_execution: false
+longevity: true
+longevity_archiving: true
+longevity_upgrading: false
+modifiability: false
+name: Paper Mache
+paper: http://dx.doi.org/10.1016/j.procs.2011.04.069
+portability: HIGH
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: paper-mache
+supports_linux: false
+supports_note: Not clear which operating systems the tool supports.
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+-----
+
+The tool has basically two components: the Paper Mache Workbench (a Web-based application) and the Paper Mache Hypervisor (a desktop application). Using the workbench, authors create packages that contain the full paper – text, figures, audio and video – together with a virtual image that includes the computational processes responsible for the results presented in the paper.

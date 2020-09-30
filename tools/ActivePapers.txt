@@ -1,0 +1,33 @@
+capture: true
+capture_code: true
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: ActivePapers
+portability: LOW
+portability_note: There is no guarantee that dependencies will work across different
+  machines.
+replicability: true
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: activepapers
+source: https://bitbucket.org/khinsen/active_papers_py
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: false
+website: https://bitbucket.org/khinsen/active_papers_py/wiki/Home
+-----
+
+ActivePapers is a framework that maintains all the software and datasets of an experiment in a single file, described in a HDF5 document. The tool supports code written in Python and collects all the dependencies between datasets and code modules.

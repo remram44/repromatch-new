@@ -1,0 +1,31 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: true
+longevity_archiving: true
+longevity_upgrading: false
+modifiability: false
+name: VirtualBox
+portability: HIGH
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: virtualbox
+source: https://www.virtualbox.org/browser/vbox/trunk
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: https://www.virtualbox.org/
+-----
+
+Oracle VM VirtualBox is a hypervisor for x86 computers.

@@ -1,0 +1,35 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: true
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: true
+longevity_archiving: false
+longevity_note: 'Kepler provides a fault-tolerance mechanism that signals and tries
+  to repair errors through user-defined expressions and alternate computation paths:
+  if the primary computational branch fails, user-defined alternates can be automatically
+  executed (more info: http://link.springer.com/chapter/10.1007%2F978-3-540-89965-5_17).'
+longevity_upgrading: true
+modifiability: true
+name: Kepler
+paper: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.59.6066&rep=rep1&type=pdf
+portability: LOW
+replicability: true
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: kepler
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: https://kepler-project.org/
+-----
+
+Kepler is designed to help scien­tists, analysts, and computer programmers create, execute, and share models and analyses across a broad range of scientific and engineering disciplines.  Kepler can operate on data stored in a variety of formats, locally and over the internet, and is an effective environment for integrating disparate software components, such as merging "R" scripts with compiled "C" code, or facilitating remote, distributed execution of models.

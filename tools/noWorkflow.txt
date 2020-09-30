@@ -1,0 +1,35 @@
+capture: true
+capture_code: true
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: true
+longevity_archiving: true
+longevity_note: All the files, Python dependencies, and parameters are stored.
+longevity_upgrading: false
+modifiability: false
+name: noWorkflow
+paper: http://bigdata.poly.edu/~fchirigati/papers/murta-ipaw2014.pdf
+portability: LOW
+replicability: false
+representation: true
+representation_descriptive_only: true
+representation_executable: false
+representation_note: noWorkflow creates a provenance graph from the execution that
+  can be analyzed. Provenance can also be analyzed by differing multiple executions,
+  or using inference queries.
+slug: noworkflow
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: https://github.com/gems-uff/noworkflow
+-----
+
+noWorkflow is a tool that transparently captures provenance from Python scripts. It is non-intrusive and does not require any code instrumentation for its use.

@@ -1,0 +1,34 @@
+capture: true
+capture_code: true
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: false
+document_linkage_inline: true
+document_linkage_note: Users can create interactive notebooks.
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+experiment_sharing_note: This is available using the Cloud version.
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: Mathematica
+portability: HIGH
+portability_note: Mathematica supports a Web interface where code can be deployed
+  in the cloud.
+replicability: true
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: mathematica
+supports_linux: true
+supports_osx: true
+supports_web_based: true
+supports_windows: true
+website: https://www.wolfram.com/mathematica/
+-----
+
+Mathematica is a computational software program used in many scientific, engineering, mathematical and computing fields, based on symbolic mathematics. 

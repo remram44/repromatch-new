@@ -1,0 +1,31 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: false
+document_linkage_inline: true
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: Sweave
+paper: http://www.statistik.lmu.de/~leisch/Sweave/Sweave-compstat2002.pdf
+portability: LOW
+replicability: true
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: sweave
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: http://www.statistik.lmu.de/~leisch/Sweave/
+-----
+
+Sweave embeds R source code into LaTeX documents, supporting the creation of dynamic reports, i.e., the resulting data analysis output (e.g., plots and tables) is automatically inserted into the final documents.

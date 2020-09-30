@@ -1,0 +1,44 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_note: ReproZip uses ptrace to capture provenance.
+capture_os: true
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: true
+longevity_archiving: true
+longevity_upgrading: false
+modifiability: true
+modifiability_note: Users can change the command line parameters and input files used
+  by the experiment using ReproZip's command line interface.
+name: ReproZip
+paper: http://bigdata.poly.edu/~fchirigati/papers/chirigati-sigmod2013.pdf
+portability: HIGH
+portability_note: ReproZip provides support for unpacking the experiment in a virtual
+  machine (using Vagrant) or in a Docker container.
+replicability: true
+replicability_note: ReproZip provides an easy-to-use command line interface to replicate
+  the experiment.
+representation: true
+representation_descriptive_only: true
+representation_executable: true
+representation_note: ReproZip creates a configuration file (descriptive-only representation)
+  that details all the provenance related to the experiment. Besides, it can create
+  a scientific workflow (VisTrails) for the experiment (executable representation).
+slug: reprozip
+source: https://github.com/ViDA-NYU/reprozip
+supports_linux: true
+supports_note: For packing the experiment, ReproZip only supports Linux (since it
+  uses ptrace), but it does support all the other platforms for the unpacking step.
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: http://vida-nyu.github.io/reprozip/
+-----
+
+ReproZip is a tool aimed at simplifying the process of creating reproducible experiments from command-line executions. It tracks operating system calls and creates a package that contains all the binaries, files, and dependencies required to run a given command on the author’s computational environment. A reviewer can then extract the experiment in his own environment to reproduce the results, even if the environment has a different operating system from the original one.

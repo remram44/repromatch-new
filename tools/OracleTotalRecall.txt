@@ -1,0 +1,31 @@
+capture: true
+capture_code: false
+capture_data: true
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: Oracle Total Recall
+paper: http://www.oracle.com/technetwork/database/focus-areas/storage/total-recall-whitepaper-171749.pdf
+portability: NONE
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: oracle-total-recall
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: https://www.oracle.com/database/
+-----
+
+Oracle Database supports the Temporal database feature. The feature enables the application to link the time dimension to an entity and record the application time or the business time limits of an entity.

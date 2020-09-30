@@ -1,0 +1,31 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: true
+longevity_archiving: true
+longevity_upgrading: false
+modifiability: false
+name: Vagrant
+portability: HIGH
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: vagrant
+source: https://github.com/mitchellh/vagrant
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: https://www.vagrantup.com/
+-----
+
+Vagrant is a computer software for creating and configuring virtual development environments.

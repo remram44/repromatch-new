@@ -1,0 +1,32 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: true
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: VCR
+paper: http://dx.doi.org/10.1016/j.procs.2011.04.067
+portability: HIGH
+portability_note: VCRs are supposed to be accessed through a Web interface.
+replicability: true
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: vcr
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: http://vcr.stanford.edu/
+-----
+
+The main idea of the VCR system is to have verifiable computational results (VCRs) – i.e., computational results of a paper (e.g., figures and tables) together with the computational processes behind them – archived in verifiable result repositories that can be universally and permanently identified by verifiable result identifiers (VRIs), which are URLs, similar to DOI strings, pointing to such repositories. Users make annotations in the source code (support for languages such as Matlab, Python, and R), and VCR plugins wrap the annotated computational processes and contact the repository server to store these VCRs and to assign VRIs to them.

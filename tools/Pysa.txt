@@ -1,0 +1,30 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: Pysa
+portability: LOW
+replicability: false
+representation: true
+representation_descriptive_only: true
+representation_executable: false
+slug: pysa
+supports_linux: true
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+website: https://pypi.python.org/pypi/Pysa
+-----
+
+Pysa is a configuration reverse engineering software, which is aimed to help anyone who wants to replicate an existing computer configuration - and not simply clone the entire machine. It can be used to migrate configurations from one computer to another (including physical machines to virtual Clouds), backup existing configurations, or for any other migration purpose.

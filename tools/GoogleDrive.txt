@@ -1,0 +1,31 @@
+capture: true
+capture_code: false
+capture_data: true
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: true
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: Google Drive
+portability: NONE
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: google-drive
+supports_linux: false
+supports_note: Google Drive has also a Desktop application for Windows and OS X.
+supports_osx: true
+supports_web_based: true
+supports_windows: true
+website: https://drive.google.com/
+-----
+
+Google Drive provides both a repository and the ability to synchronize files across different platforms,

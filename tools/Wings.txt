@@ -1,0 +1,34 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: true
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: true
+experiment_sharing_hosted_execution: false
+experiment_sharing_note: 'Wings provides a repository to upload and share executable
+  workflows together with their abstract versions (more info: http://www.isi.edu/~gil/papers/garijo-gil-works11.pdf).'
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: Wings
+paper: https://pegasus.isi.edu/publications/gil-etal-iaai07.pdf
+portability: LOW
+replicability: true
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: wings
+source: https://github.com/IKCAP/wings
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: http://www.wings-workflows.org/
+-----
+
+Wings is a semantic workflow system that assists scientists with the design of computational experiments. A computational experiment specifies how selected datasets are to be processed by a series of software components in a particular configuration.

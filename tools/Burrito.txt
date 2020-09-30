@@ -1,0 +1,32 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: true
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: Burrito
+paper: https://www.usenix.org/system/files/conference/tapp12/tapp12-final10.pdf
+portability: NONE
+replicability: false
+representation: true
+representation_descriptive_only: true
+representation_executable: false
+slug: burrito
+source: https://github.com/pgbovine/burrito
+supports_linux: true
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+website: http://www.pgbovine.net/burrito.html
+-----
+
+The Burrito system is a Linux-based provenance collection and note-taking tool that runs in the background of the operating system. While in the background, Burrito collects system-level provenance from every computational process running in the operating system. In addition, it captures information regarding GUI window interactions and uses a versioning file system to preserve a complete history of the system.

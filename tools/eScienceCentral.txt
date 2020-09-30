@@ -1,0 +1,34 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: true
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+experiment_sharing_note: Scientists can upload modules and components to the platform,
+  composing them as workflows to be run on the cloud.
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: e-Science Central
+paper: http://dx.doi.org/10.1145/2110497.2110512
+portability: HIGH
+replicability: true
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: e-science-central
+source: https://bitbucket.org/digitalinstitute/esciencecentral/
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: http://www.esciencecentral.co.uk/
+-----
+
+A cloud-based platform to perform data analysis that can be deployed in public clouds or private clusters. Data can be uploaded to the platform, as well as services can be deployed and combined in a variety of workflows. The platform allows versioning of data, components and workflows (workflow evolution), and scientists can work with old versions when required.

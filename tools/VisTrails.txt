@@ -1,0 +1,42 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: true
+document_linkage: true
+document_linkage_by_reference: true
+document_linkage_inline: false
+document_linkage_note: 'VisTrails has a LaTeX package that defines a new command to
+  reference the underlying computation, passing the information to VisTrails for computation
+  and placing the result (e.g.: a figure) from the workflow directly into a PDF document.'
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+experiment_sharing_note: This is possible by uploading workflows to crowdLabs.
+longevity: true
+longevity_archiving: false
+longevity_note: 'Workflows can be upgraded as libraries change and evolve (more info:
+  http://vgc.poly.edu/~dakoop/pubs/workflow-upgrades-ipaw2010.pdf).'
+longevity_upgrading: true
+modifiability: true
+modifiability_note: Workflow parameters can be changed through the interface and also
+  by using the parameter exploration feature.
+name: VisTrails
+paper: http://www.aosabook.org/en/vistrails.html
+portability: LOW
+replicability: true
+replicability_note: All the parameters and data are saved in the workflow, and can
+  be used to replicate the results.
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: vistrails
+source: https://github.com/VisTrails/VisTrails
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: http://www.vistrails.org/
+-----
+
+VisTrails is an open-source scientific workflow and provenance management system that provides support for simulations, data exploration and visualization.

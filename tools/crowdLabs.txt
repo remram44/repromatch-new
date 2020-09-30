@@ -1,0 +1,34 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+modifiability_note: The repository has support for VisTrails mashups, which specify
+  higher-level workflow interfaces that allow inputs to be exposed and modified.
+name: crowdLabs
+paper: http://dl.acm.org/citation.cfm?id=2032445
+portability: HIGH
+replicability: true
+replicability_note: Users can replicate workflows on the Web.
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: crowdlabs
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: http://www.crowdlabs.org/
+-----
+
+In the crowdLabs Web site, scientists can host and share VisTrails workflows.

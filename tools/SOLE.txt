@@ -1,0 +1,32 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: true
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: true
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: SOLE
+paper: http://dl.acm.org/citation.cfm?id=2406463
+portability: HIGH
+portability_note: Only if Web services or virtual machine images are deployed.
+replicability: true
+replicability_note: Only if Web services or virtual machine images are deployed.
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: sole
+supports_linux: true
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+-----
+
+SOLE (Science Object Linking and Embedding) presents documents in HTML format, where users associate sets of words in the document with tags, and each tag refers to a URL specification of a science object: a science object, in this case, can be source code, a dataset repository, an annotated PDF file, or a virtual machine image that can be deployed in the cloud by using package managers, e.g., packing tools and configuration management tools.

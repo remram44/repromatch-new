@@ -1,0 +1,32 @@
+capture: true
+capture_code: true
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: ProvenanceCurious
+paper: http://dl.acm.org/citation.cfm?id=2452475
+portability: LOW
+replicability: false
+representation: true
+representation_descriptive_only: true
+representation_executable: false
+slug: provenancecurious
+source: https://github.com/rezwan4438/ProvenanceCurious
+supports_linux: true
+supports_note: The tool is an Eclipse plugin.
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+-----
+
+ProvenanceCurious builds an abstract syntax tree from Python code to generate graphs that can be queried and manipulated by users.

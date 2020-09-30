@@ -1,0 +1,31 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: HUBZero
+paper: http://dx.doi.org/10.1109/MCSE.2010.41
+portability: HIGH
+replicability: true
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: hubzero
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: https://hubzero.org/
+-----
+
+HUBzero is an open-source framework that allows the creation of scientific platforms and repositories targeted to specific domains. Examples of repositories that use HUBzero include nanoHUB, which is focused on nanotechnology, and pharmaHUB, which is used for pharmaceutical research.

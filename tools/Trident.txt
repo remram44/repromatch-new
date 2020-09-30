@@ -1,0 +1,36 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: true
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: true
+experiment_sharing_hosted_execution: false
+experiment_sharing_note: Trident can also access, share and download workflows from
+  myExperiment, supporting archival.
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: Trident
+paper: http://dx.doi.org/10.1109/eScience.2008.126
+portability: LOW
+portability_note: Low portability for the desktop application, and high portability
+  for the Web-based application (requires Silverlight).
+replicability: true
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: trident
+source: http://tridentworkflow.codeplex.com/SourceControl/latest
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: true
+website: http://tridentworkflow.codeplex.com/
+-----
+
+A scientific workflow system implemented on top of Windows Workflow Foundation, currenly working only on Windows operating systems. The tool provides support for workflow evolution, where scientists can trace their research and associated results through time, being able to reproduce the findings.

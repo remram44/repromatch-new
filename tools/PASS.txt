@@ -1,0 +1,34 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: true
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: PASS
+paper: http://www.eecs.harvard.edu/syrah/pass/pubs/pass-april-2005.pdf
+portability: LOW
+replicability: true
+representation: true
+representation_descriptive_only: true
+representation_executable: true
+representation_note: Besides the audit trails (descriptive-only), PASS has a feature
+  to generate scripts to reproduce an experiment in the environment in which it was
+  originally created and executed.
+slug: pass
+supports_linux: true
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+website: http://www.eecs.harvard.edu/syrah/pass/
+-----
+
+PASS (Provenance-Aware Storage System) produces audit trails for data products by monitoring the operating system kernel. These audit trails are stored in a database and can be queried. The system supports application-generated provenance to be written into the same database to produce an integrated view of application and system-level provenance.

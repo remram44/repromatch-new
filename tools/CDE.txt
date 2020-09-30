@@ -1,0 +1,33 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: true
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: true
+longevity_archiving: true
+longevity_upgrading: false
+modifiability: false
+name: CDE
+paper: http://www.pgbovine.net/publications/CDE-create-portable-Linux-packages-short-paper_USENIX-2011.pdf
+portability: MEDIUM
+portability_note: Re-execution in compatible Linux systems.
+replicability: true
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: cde
+source: http://github.com/pgbovine/CDE/
+supports_linux: true
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+website: http://www.pgbovine.net/cde.html
+-----
+
+CDE automatically packages up the Code, Data, and Environment required to deploy and run your Linux programs on other machines without any installation or configuration.

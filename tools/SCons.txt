@@ -1,0 +1,38 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+modifiability_note: Modifiability can be achieved by using the scripts.
+name: SCons
+portability: LOW
+portability_note: The scripts can be re-used in the same machine to reproduce experiment
+  findings, but portability to other environments cannot be automatically guaranteed
+  without extra work, e.g., unless the user takes care of different operating systems
+  and hardware architectures.
+replicability: true
+replicability_note: Given a script, a user can re-execute the experiment.
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+representation_note: The Python scripts can be used as an executable representation
+  for the experiment.
+slug: scons
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: http://www.scons.org/
+-----
+
+SCons is an Open Source software construction tool.

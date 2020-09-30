@@ -1,0 +1,32 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: true
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: myExperiment
+paper: http://dl.acm.org/citation.cfm?id=1507924
+portability: NONE
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: myexperiment
+source: https://github.com/myExperiment/myExperiment
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: http://www.myexperiment.org/
+-----
+
+myExperiment is a Web repository for scientific workflows that were developed to support a growing and distributed base of workflow scientists and developers. The main idea is to provide a “workflow bazaar” for any workflow management system, although most of them are Taverna workflows. The Web interface allows scientists to upload and search for specific workflows, create and join groups for further discussions, and make connections with other researchers.

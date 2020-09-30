@@ -1,0 +1,31 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: true
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: DuraCloud
+portability: NONE
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: duracloud
+source: https://github.com/duracloud/duracloud
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: http://www.duracloud.org/
+-----
+
+DuraCloud is a service from DuraSpace that archives and preserves data in the cloud. It is an application that front-ends commercial and academic cloud providers (e.g., Amazon Web Services) and that provides additional functionalities, such as file health checkup, online data sharing, and ability to move content between different cloud providers.

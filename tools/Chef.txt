@@ -1,0 +1,30 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: Chef
+portability: LOW
+replicability: false
+representation: true
+representation_descriptive_only: true
+representation_executable: false
+slug: chef
+supports_linux: true
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+website: https://www.chef.io/
+-----
+
+Chef is a configuration management tool written in Ruby and Erlang. It uses a pure-Ruby, domain-specific language (DSL) for writing system configuration "recipes". Chef is used to streamline the task of configuring and maintaining a company's servers, and can integrate with cloud-based platforms such as Rackspace, Internap, Amazon EC2, Google Cloud Platform, OpenStack, SoftLayer, and Microsoft Azure to automatically provision and configure new machines.

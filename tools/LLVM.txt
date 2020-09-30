@@ -1,0 +1,32 @@
+capture: true
+capture_code: true
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: LLVM
+paper: https://www.usenix.org/system/files/conference/tapp12/tapp12-final22.pdf
+portability: LOW
+replicability: false
+representation: true
+representation_descriptive_only: true
+representation_executable: false
+representation_note: The execution trace produced is a provenance graph that is loaded
+  into SPADE, where it can be managed and queried.
+slug: llvm
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+-----
+
+The compiler frameworks LLVM can be used to instrument provenance at compilation time. This works for a range of programming languages, such as C, C++, and Java. The idea is to insert capture of execution provenance at each function entry and exit: when the framework compiles the experiment, provenance at the binary level is transparently captured at the cost of a small overhead.

@@ -1,0 +1,31 @@
+capture: true
+capture_code: true
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: false
+document_linkage_inline: true
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: RCloud
+portability: HIGH
+replicability: true
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: rcloud
+source: https://github.com/att/rcloud
+supports_linux: true
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: http://att.github.io/rcloud/
+-----
+
+RCloud is an HTML5 frontend for collaboratively developing and sharing R scripts.

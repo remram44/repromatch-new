@@ -1,0 +1,30 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: true
+longevity_archiving: true
+longevity_upgrading: false
+modifiability: false
+name: Puppet
+portability: LOW
+replicability: false
+representation: true
+representation_descriptive_only: true
+representation_executable: false
+slug: puppet
+supports_linux: true
+supports_osx: false
+supports_web_based: false
+supports_windows: true
+website: https://puppetlabs.com/
+-----
+
+Puppet is an open source configuration management utility. It runs on many Unix-like systems as well as on Microsoft Windows, and includes its own declarative language to describe system configuration.

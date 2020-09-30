@@ -1,0 +1,30 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: true
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: Open Science Framework
+portability: NONE
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: open-science-framework
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: https://osf.io/
+-----
+
+The Open Science Framework is a Web-based portal and repository to archive and share research data. The repository implements a frontend to Git, abstracting the Git interface and automatically versioning all uploaded files. Scientists can revisit old states of an experiment, and also “freeze” a particular state to be shared among researchers (e.g., for a paper publication).

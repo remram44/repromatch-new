@@ -1,0 +1,39 @@
+capture: true
+capture_code: true
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: true
+document_linkage_inline: false
+document_linkage_note: Sumatra provides document linkage by reference by including
+  both a LaTeX package and Sphinx directives that enable embedding output data files
+  (e.g., images) from previously-captured experiments into documents, with verification
+  of file contents using SHA1 digests (i.e., a form of cryptographically secure hashing)
+  and hyperlinks to a full record containing the captured provenance.
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: Sumatra
+paper: http://dx.doi.org/10.1109/MCSE.2012.41
+portability: LOW
+portability_note: 'Sumatra does not offer any particular support for making computations
+  portable: experiments are only guaranteed to be repeated in the original environment.'
+replicability: true
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: sumatra
+source: https://github.com/open-research/sumatra
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: false
+website: http://neuralensemble.org/sumatra/
+-----
+
+Sumatra is a Python library and tool that manages and tracks projects by capturing and maintaining information about each run of the experiment. Sumatra requires knowledge of the programming language to get library dependencies. In addition, users need to configure the location of input and output files, and for experiments that use or support Python scripting, there is an API that includes capture within the code based on user-defined annotations.

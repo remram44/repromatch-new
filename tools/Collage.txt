@@ -1,0 +1,31 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: false
+document_linkage_inline: true
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: Collage
+paper: http://dx.doi.org/10.1016/j.procs.2011.04.064
+portability: HIGH
+replicability: true
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: collage
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: http://www.elsevier.com/about/content-innovation/collage
+-----
+
+The Collage Authoring Environment is an infrastructure to publish papers in the form of HMTL documents that blend static and dynamic content. The dynamic content of the paper is provided by assets: an asset is a fragment of the document that is represented by an interactive visualization, a code snippet, or an input form in which data is fed by readers to reproduce and verify parts of the paper.

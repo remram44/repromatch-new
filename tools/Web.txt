@@ -1,0 +1,30 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: false
+document_linkage_inline: true
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: Web
+paper: http://comjnl.oxfordjournals.org/content/27/2/97.short
+portability: LOW
+replicability: true
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: web
+supports_linux: true
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+-----
+
+A tool for writing literate Pascal programs that focused on providing a better documentation for the source code.

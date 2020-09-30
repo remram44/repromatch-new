@@ -1,0 +1,33 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: true
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+longevity: true
+longevity_archiving: true
+longevity_note: Images are created by authors and their experiments are preserved
+  (i.e., they will not be changed or updated) inside them.
+longevity_upgrading: false
+modifiability: false
+name: SHARE
+paper: http://dx.doi.org/10.1016/j.procs.2011.04.062
+portability: HIGH
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: share
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: http://is.ieis.tue.nl/staff/pvgorp/share/
+-----
+
+SHARE (Sharing Hosted Autonomous Research Environments) is a Web portal where virtual machines can be created, shared and accessed. The main idea is for authors to upload a virtual machine image related to their experiment, which can then be linked to into the paper: the image contains everything that is necessary to reproduce the results.

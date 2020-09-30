@@ -1,0 +1,35 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+longevity: true
+longevity_archiving: true
+longevity_note: It depends on the commercial provider to maintain the infrastructure
+  running in a long-term basis.
+longevity_upgrading: false
+modifiability: false
+name: Eucalyptus
+paper: http://dx.doi.org/10.1109/CCGRID.2009.93
+portability: HIGH
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: eucalyptus
+supports_linux: true
+supports_note: 'When deploying the cloud platform, Eucalyptus supports the following
+  Linux distributions: CentOS 6 and RHEL 6. Eucalyptus only supports 64-bit architecture.'
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+website: https://www.eucalyptus.com/
+-----
+
+Eucalyptus is a free and open-source computer software for building Amazon Web Services (AWS)-compatible private and hybrid cloud computing environments marketed by the company Eucalyptus Systems. Eucalyptus is the acronym for Elastic Utility Computing Architecture for Linking Your Programs To Useful Systems. It enables pooling compute, storage, and network resources that can be dynamically scaled up or down as application workloads change.

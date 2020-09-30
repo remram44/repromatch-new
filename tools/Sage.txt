@@ -1,0 +1,30 @@
+capture: true
+capture_code: true
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: false
+document_linkage_inline: true
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: Sage
+portability: HIGH
+replicability: true
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: sage
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: https://cloud.sagemath.com/
+-----
+
+SageMath (previously Sage or SAGE, System for Algebra and Geometry Experimentation) is mathematical software with features covering many aspects of mathematics, including algebra, combinatorics, numerical mathematics, number theory, and calculus. It includes a browser-based notebook for review and re-use of previous inputs and outputs, including graphics and text annotations.

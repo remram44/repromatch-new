@@ -1,0 +1,32 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: true
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+experiment_sharing_note: Supports hosted execution since it is a Web-based tool.
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: CRIS
+paper: http://dx.doi.org/10.1109/IRI.2013.6642486
+portability: HIGH
+replicability: true
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: cris
+supports_linux: false
+supports_osx: false
+supports_web_based: true
+supports_windows: false
+website: https://cris.cyber.purdue.edu/
+-----
+
+CRIS (Computational Research Infrastructure for Science) is an application that allows scientists to create, configure, execute, and share scientific workflows on the Web.

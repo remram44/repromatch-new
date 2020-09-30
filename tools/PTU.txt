@@ -1,0 +1,32 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: true
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: true
+longevity_archiving: true
+longevity_upgrading: false
+modifiability: false
+name: PTU
+paper: https://www.usenix.org/system/files/conference/tapp13/tapp13-final18.pdf
+portability: MEDIUM
+replicability: true
+representation: true
+representation_descriptive_only: true
+representation_executable: false
+representation_note: It generates a provenance graph from the execution.
+slug: ptu
+supports_linux: true
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+website: http://people.cs.uchicago.edu/~quanpt/sole/PTU.html
+-----
+
+PTU (Provenance-To-Use) packages source code, data, environment, and a run-time reference execution. PTU is based on CDE, and users can view the run-time reference execution and choose the steps to re-execute.

@@ -1,0 +1,33 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+longevity: true
+longevity_archiving: true
+longevity_upgrading: false
+modifiability: false
+name: Olive
+paper: http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6144776&tag=1
+portability: HIGH
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: olive
+supports_linux: true
+supports_note: Only the client software is available; the server is not yet publicly
+  released.
+supports_osx: false
+supports_web_based: false
+supports_windows: true
+website: http://olivearchive.org/
+-----
+
+Olive is used to stream virtual machine snapshots from a server. These snapshots do not need to be entirely downloaded from the Internet: users access them using a client software, and modifications can be saved or removed without interfering with the archived version.

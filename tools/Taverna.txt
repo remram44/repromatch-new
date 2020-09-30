@@ -1,0 +1,37 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: true
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: true
+experiment_sharing_archival: true
+experiment_sharing_hosted_execution: false
+experiment_sharing_note: Using myExperiment.
+longevity: true
+longevity_archiving: false
+longevity_note: 'When services become unaccessible, substitutes can be automatically
+  located by comparing compatible parameters and tasks (even when semantic annotations
+  are not available), and then those services can replace existing services within
+  the workflow by suitable modifications to input and output type transformations
+  (more info: http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6123265&tag=1).'
+longevity_upgrading: true
+modifiability: true
+name: Taverna
+paper: http://nar.oxfordjournals.org/content/41/W1/W557
+portability: LOW
+replicability: true
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: taverna
+supports_linux: true
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+website: http://www.taverna.org.uk/
+-----
+
+Taverna is an open source and domain-independent Workflow Management System – a suite of tools used to design and execute scientific workflows and aid in silico experimentation.

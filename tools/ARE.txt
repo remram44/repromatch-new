@@ -1,0 +1,31 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: false
+document_linkage_inline: true
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: A-R-E
+paper: http://dx.doi.org/10.1016/j.procs.2011.04.066
+portability: HIGH
+replicability: true
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: a-r-e
+supports_linux: false
+supports_note: Not clear which operating systems the tool supports.
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+-----
+
+The Author-Review-Execute Environment (A-R-E) focuses on the review process of a paper and on the communication among authors, reviewers and publishers. In this system, a scientific paper is presented using Information Workbench, a semantic Wiki-based tool: authors import their papers to the system and include links to internal and external resources (e.g., a semantic database).

@@ -1,0 +1,37 @@
+capture: true
+capture_code: true
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: true
+document_linkage_by_reference: false
+document_linkage_inline: true
+experiment_sharing: true
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: true
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: IPython
+paper: http://fperez.org/papers/ipython07_pe-gr_cise.pdf
+portability: HIGH
+portability_note: Low portability for the desktop application, and high portability
+  for the Web-based interface.
+replicability: true
+replicability_note: Computational results can be associated to notebooks and execution
+  sessions, allowing users to repeat past computations and change parameters interactively
+  to get new results.
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: ipython
+source: https://github.com/ipython/ipython
+supports_linux: true
+supports_osx: true
+supports_web_based: true
+supports_windows: true
+website: http://ipython.org/
+-----
+
+IPython provides a rich architecture for interactive computing with: (i) powerful interactive shells (terminal and Qt-based); (ii) a browser-based notebook with support for code, text, mathematical expressions, inline plots and other rich media; (iii) support for interactive data visualization and use of GUI toolkits; (iv) flexible, embeddable interpreters to load into your own projects; and (v) easy to use, high performance tools for parallel computing.

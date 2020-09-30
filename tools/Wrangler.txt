@@ -1,0 +1,31 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: true
+longevity_archiving: true
+longevity_upgrading: false
+modifiability: false
+name: Wrangler
+paper: http://dx.doi.org/10.1109/CloudCom.2011.102
+portability: HIGH
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: wrangler
+supports_linux: true
+supports_note: Its Desktop application for deployment supports Linux systems.
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+-----
+
+A tool to provision, configure, and manage virtual machine deployments in the cloud.

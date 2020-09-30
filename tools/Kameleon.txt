@@ -1,0 +1,32 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: false
+name: Kameleon
+paper: https://hal.inria.fr/inria-00630044/document
+portability: HIGH
+replicability: false
+representation: true
+representation_descriptive_only: true
+representation_executable: false
+slug: kameleon
+source: https://github.com/oar-team/kameleon
+supports_linux: true
+supports_osx: false
+supports_web_based: false
+supports_windows: false
+website: http://kameleon.imag.fr/
+-----
+
+Kameleon is a tool to generate customized appliances. With Kameleon, you make your recipe that describes how to create step by step your own distribution. At start Kameleon is used to create custom kvm, docker, VirtualBox.

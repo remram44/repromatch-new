@@ -1,0 +1,38 @@
+capture: true
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: true
+document_linkage: true
+document_linkage_by_reference: false
+document_linkage_inline: true
+document_linkage_note: Galaxy allows the creation of Web-based documents (called Pages)
+  that, in addition to text, also embed Galaxy items (datasets, histories, and workflows).
+experiment_sharing: true
+experiment_sharing_archival: true
+experiment_sharing_hosted_execution: true
+experiment_sharing_note: Galaxy has its own public repository, where experiments can
+  be executed at the server using the Web based interface. Also, users can share workflows
+  using myExperiment.
+longevity: false
+longevity_archiving: false
+longevity_upgrading: false
+modifiability: true
+name: Galaxy
+paper: http://genomebiology.com/2010/11/8/r86
+portability: HIGH
+portability_note: 'Galaxy supports high portability through its Web-based application. '
+replicability: true
+representation: true
+representation_descriptive_only: false
+representation_executable: true
+slug: galaxy
+supports_linux: true
+supports_note: For Windows, it requires a bit more effort. See https://wiki.galaxyproject.org/Admin/Config/Windows
+supports_osx: true
+supports_web_based: true
+supports_windows: true
+website: http://galaxyproject.org/
+-----
+
+Galaxy is an open, web-based platform for data intensive biomedical research. 

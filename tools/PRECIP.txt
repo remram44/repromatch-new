@@ -1,0 +1,32 @@
+capture: false
+capture_code: false
+capture_data: false
+capture_os: false
+capture_workflow: false
+document_linkage: false
+document_linkage_by_reference: false
+document_linkage_inline: false
+experiment_sharing: false
+experiment_sharing_archival: false
+experiment_sharing_hosted_execution: false
+longevity: true
+longevity_archiving: true
+longevity_upgrading: false
+modifiability: false
+name: PRECIP
+paper: http://dx.doi.org/10.1109/CloudCom.2013.98
+portability: HIGH
+replicability: false
+representation: false
+representation_descriptive_only: false
+representation_executable: false
+slug: precip
+supports_linux: true
+supports_note: PRECIP is a Python package, so it should work in all the platforms.
+  However, this information is not enough clear.
+supports_osx: true
+supports_web_based: false
+supports_windows: true
+-----
+
+A flexible experiment management API, written in Python that simplifies and formalizes the execution of scientific experiments on cloud infrastructures.
