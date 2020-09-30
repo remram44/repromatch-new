@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1>{{ meta.name }}</h1>
+{% if meta.website %}
+<p>Site: <a href="{{ meta.website }}">{{ meta.website }}</a></p>
+{% endif %}
+{% if meta.source %}
+<p>Source: <a href="{{ meta.source }}">{{ meta.source }}</a></p>
+{% endif %}
+{{ content }}
+{% endblock %}
