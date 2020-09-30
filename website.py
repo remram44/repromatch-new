@@ -26,6 +26,10 @@ def main():
         autoescape=jinja2.select_autoescape(['html']),
     )
 
+    # Categories
+    capture = []
+    sharing = []
+
     # Process each tool file
     tool_template = template_env.get_template('tool.html')
     for tool_file in os.listdir(tools_dir):
@@ -64,6 +68,30 @@ def main():
                     content=jinja2.Markup(content),
                     meta=meta,
                 ))
+
+            # Add to categories
+            if meta.get('capture'):
+                capture.append((tool_basename, meta.get('capture_note')))
+            if meta.get('experiment_sharing'):
+                sharing.append((tool_basename, None))
+
+    # Generate category pages
+    category_template = template_env.get_template('category.html')
+    with open(os.path.join(output_dir, 'capture.html'), 'w') as f_out:
+        f_out.write(category_template.render(
+            category='capture',
+            tools=capture,
+        ))
+    with open(os.path.join(output_dir, 'sharing.html'), 'w') as f_out:
+        f_out.write(category_template.render(
+            category='sharing',
+            tools=sharing,
+        ))
+
+    # Generate index
+    index_template = template_env.get_template('index.html')
+    with open(os.path.join(output_dir, 'index.html'), 'w') as f_out:
+        f_out.write(index_template.render())
 
 
 if __name__ == '__main__':

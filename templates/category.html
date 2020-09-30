@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1>{{ category }}</h1>
+<ul>
+  {% for tool, description in tools %}
+  <li><a href="{{ tool }}.html">{{ tool }}</a>{% if description %}: {{ description }}{% endif %}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
