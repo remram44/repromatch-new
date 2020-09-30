@@ -138,6 +138,13 @@ def main():
         os.path.join(output_dir, search_index_file),
     )
 
+    # Copy search script
+    search_template = template_env.get_template('search.js')
+    with open(os.path.join(output_dir, 'search.js'), 'w') as f_out:
+        f_out.write(search_template.render(
+            search_index_file=search_index_file,
+        ))
+
 
 class HashedFile(object):
     def __init__(self, fp):
