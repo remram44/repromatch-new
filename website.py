@@ -72,6 +72,7 @@ def main():
                 f_out.write(tool_template.render(
                     content=jinja2.Markup(content),
                     meta=meta,
+                    basename=tool_basename,
                 ))
 
             # Add to categories
