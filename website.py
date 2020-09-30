@@ -1,5 +1,6 @@
 import jinja2
 import logging
+import markdown
 import os
 import yaml
 
@@ -54,10 +55,13 @@ def main():
                     content.append(line)
             content = ''.join(content)
 
+            # Render markdown
+            content = markdown.markdown(content)
+
             # Open output
             with open(tool_output, 'w') as f_out:
                 f_out.write(tool_template.render(
-                    content=content,
+                    content=jinja2.Markup(content),
                     meta=meta,
                 ))
 
