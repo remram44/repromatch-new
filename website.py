@@ -97,12 +97,12 @@ def main():
     with open(os.path.join(output_dir, 'capture.html'), 'w') as f_out:
         f_out.write(category_template.render(
             category='capture',
-            tools=capture,
+            tools=sorted(capture, key=lambda p: p[0].lower()),
         ))
     with open(os.path.join(output_dir, 'sharing.html'), 'w') as f_out:
         f_out.write(category_template.render(
             category='sharing',
-            tools=sharing,
+            tools=sorted(sharing, key=lambda p: p[0].lower()),
         ))
 
     # Generate index
