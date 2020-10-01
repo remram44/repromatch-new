@@ -4,6 +4,7 @@ import json
 import logging
 import markdown
 import os
+import shutil
 import yaml
 
 
@@ -316,6 +317,13 @@ def main():
         f_out.write(search_template.render(
             search_index_file=search_index_file,
         ))
+
+    # Copy statics
+    shutil.copytree(
+        os.path.join(DIRECTORY, 'static'),
+        output_dir,
+        dirs_exist_ok=True,
+    )
 
 
 class HashedFile(object):
