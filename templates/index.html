@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 
+{% set active_page = 'index' %}
+
 {% block body %}
 <h1>Repromatch</h1>
+<p class="lead">Welcome to Repromatch, the research reproducibility matcher! On this site you will find many tools and guidelines to make your research reproducible.</p>
 
 <h2>Categories</h2>
+<p>Use the search bar above to find articles or click on one of those categories:</p>
 <ul>
   {% for category, name, values in categories %}
   <li>
