@@ -3,16 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>CRIS - Repromatch</title>
+    <link rel="stylesheet" href="../bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="../custom.css">
     <script src="../search.js"></script>
   </head>
   <body>
-    <div id="search-div" style="display: none;">
-      <form id="search-form">
-        <input type="text" id="search-bar" placeholder="Search..." />
-        <input type="submit" value="Go" />
-      </form>
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+      <div class="container">
+        <a href="../" class="navbar-brand">Repromatch</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" id="search-form" style="display: none;">
+            <input class="form-control mr-sm-2" type="text" id="search-bar" placeholder="Search...">
+            <input type="submit" value="Search" />
+          </form>
+        </div>
+      </div>
     </div>
-    <div id="content">
+    <div class="container" id="content">
 
 <h1>CRIS</h1>
 
@@ -23,15 +41,16 @@
 <p><a href="https://github.com/remram44/repromatch-new/blob/master/tools/CRIS.txt">Edit this entry on GitHub</a></p>
 
     </div>
-    <div id="search-results" style="display: none;">
+    <div class="container" id="search-results" style="display: none;">
       <h1>Search results</h1>
       <ul id="search-results-list"></ul>
     </div>
     <script>
 search_init('../');
 
-var searchForm = document.getElementById('search-div').style.display = '';
-document.getElementById('search-form').addEventListener('submit', function(e) {
+var searchForm = document.getElementById('search-form');
+searchForm.style.display = '';
+searchForm.addEventListener('submit', function(e) {
   e.preventDefault();
   console.log('searching: ', document.getElementById('search-bar').value);
   var hits = search(document.getElementById('search-bar').value);
