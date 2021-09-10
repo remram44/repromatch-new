@@ -95,6 +95,7 @@ def main():
     search_index = {}
 
     # Process each tool file
+    os.makedirs(os.path.join(output_dir, 'tools'), exist_ok=True)
     tool_template = template_env.get_template('tool.html')
     for tool_file in os.listdir(tools_dir):
         logger.info("Processing %s", tool_file)
@@ -102,7 +103,7 @@ def main():
         tool_file = os.path.join(tools_dir, tool_file)
         if not tool_file.endswith('.txt'):
             continue
-        tool_output = os.path.join(output_dir, '%s.html' % tool_basename)
+        tool_output = os.path.join(output_dir, 'tools', '%s.html' % tool_basename)
 
         with open(tool_file) as f_in:
             # Read header
@@ -254,11 +255,12 @@ def main():
 
     # Generate category pages
     logger.info("Creating category pages")
+    os.makedirs(os.path.join(output_dir, 'categories'), exist_ok=True)
     category_template = template_env.get_template('category.html')
     for category, (cat_name, values) in categories.items():
         for category_value, (catval_name, tools) in values.items():
             shortname = '{0}-{1}.html'.format(category, category_value)
-            with open(os.path.join(output_dir, shortname), 'w') as f_out:
+            with open(os.path.join(output_dir, 'categories', shortname), 'w') as f_out:
                 f_out.write(category_template.render(
                     category=cat_name,
                     category_value=catval_name,

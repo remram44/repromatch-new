@@ -10,7 +10,7 @@
     {{ name }}:
     {% for category_value, value_name in values -%}
     {%- if not loop.first %}, {% endif -%}
-    <a href="{{ category }}-{{ category_value }}.html">{{ value_name }}</a>
+    <a href="categories/{{ category }}-{{ category_value }}.html">{{ value_name }}</a>
     {% endfor %}
   </li>
   {% endfor %}
