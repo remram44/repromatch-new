@@ -5,7 +5,8 @@
 
 <h2>Categories</h2>
 <ul>
-  <li><a href="capture.html">Automatic capture</a></li>
-  <li><a href="sharing.html">Experiment sharing</a></li>
+  {% for shortname, name in categories %}
+  <li><a href="{{ shortname }}.html">{{ name }}</a></li>
+  {% endfor %}
 </ul>
 {% endblock %}

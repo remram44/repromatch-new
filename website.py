@@ -28,9 +28,10 @@ def main():
         autoescape=jinja2.select_autoescape(['html']),
     )
 
-    # Categories
-    capture = []
-    sharing = []
+    categories = {
+        'capture': ("Automatic capture", []),
+        'sharing': ("Experiment sharing", []),
+    }
 
     # Search index
     search_index = {}
@@ -77,9 +78,9 @@ def main():
 
             # Add to categories
             if meta.get('capture'):
-                capture.append((tool_basename, meta.get('capture_note')))
+                categories['capture'][1].append((tool_basename, meta.get('capture_note')))
             if meta.get('experiment_sharing'):
-                sharing.append((tool_basename, None))
+                categories['sharing'][1].append((tool_basename, None))
 
             # Add to search index
             keywords = {tool_basename}
@@ -94,22 +95,20 @@ def main():
     # Generate category pages
     logger.info("Creating category pages")
     category_template = template_env.get_template('category.html')
-    with open(os.path.join(output_dir, 'capture.html'), 'w') as f_out:
-        f_out.write(category_template.render(
-            category='capture',
-            tools=sorted(capture, key=lambda p: p[0].lower()),
-        ))
-    with open(os.path.join(output_dir, 'sharing.html'), 'w') as f_out:
-        f_out.write(category_template.render(
-            category='sharing',
-            tools=sorted(sharing, key=lambda p: p[0].lower()),
-        ))
+    for shortname, (name, tools) in categories.items():
+        with open(os.path.join(output_dir, '{0}.html'.format(shortname)), 'w') as f_out:
+            f_out.write(category_template.render(
+                category=name,
+                tools=sorted(tools, key=lambda p: p[0].lower()),
+            ))
 
     # Generate index
     logger.info("Creating index page")
     index_template = template_env.get_template('index.html')
     with open(os.path.join(output_dir, 'index.html'), 'w') as f_out:
-        f_out.write(index_template.render())
+        f_out.write(index_template.render(
+            categories=[(shortname, name) for shortname, (name, tools) in categories.items()],
+        ))
 
     # Remove previous search indexes
     logger.info("Generating search index")
