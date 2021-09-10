@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Repromatch</title>
+    <script src="search.js"></script>
+  </head>
+  <body>
+    <div id="search-div" style="display: none;">
+      <form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search..." />
+        <input type="submit" value="Go" />
+      </form>
+    </div>
+    <div id="content">
+
+<h1>Document Linkage - Yes</h1>
+<ul>
+  
+  <li><a href="../tools/ARE.html">ARE</a></li>
+  
+  <li><a href="../tools/Collage.html">Collage</a></li>
+  
+  <li><a href="../tools/DEEP.html">DEEP</a></li>
+  
+  <li><a href="../tools/Dexy.html">Dexy</a></li>
+  
+  <li><a href="../tools/Galaxy.html">Galaxy</a></li>
+  
+  <li><a href="../tools/GenePattern.html">GenePattern</a></li>
+  
+  <li><a href="../tools/IPython.html">IPython</a></li>
+  
+  <li><a href="../tools/Madagascar.html">Madagascar</a></li>
+  
+  <li><a href="../tools/Mathematica.html">Mathematica</a></li>
+  
+  <li><a href="../tools/MATLAB.html">MATLAB</a></li>
+  
+  <li><a href="../tools/Noweb.html">Noweb</a></li>
+  
+  <li><a href="../tools/PaperMache.html">PaperMache</a></li>
+  
+  <li><a href="../tools/RCloud.html">RCloud</a></li>
+  
+  <li><a href="../tools/Sage.html">Sage</a></li>
+  
+  <li><a href="../tools/SHARE.html">SHARE</a></li>
+  
+  <li><a href="../tools/SOLE.html">SOLE</a></li>
+  
+  <li><a href="../tools/Sumatra.html">Sumatra</a></li>
+  
+  <li><a href="../tools/Sweave.html">Sweave</a></li>
+  
+  <li><a href="../tools/VCR.html">VCR</a></li>
+  
+  <li><a href="../tools/VisTrails.html">VisTrails</a></li>
+  
+  <li><a href="../tools/Web.html">Web</a></li>
+  
+</ul>
+
+    </div>
+    <div id="search-results" style="display: none;">
+      <h1>Search results</h1>
+      <ul id="search-results-list"></ul>
+    </div>
+    <script>
+var searchForm = document.getElementById('search-div').style.display = '';
+document.getElementById('search-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  console.log('searching: ', document.getElementById('search-bar').value);
+  var hits = search(document.getElementById('search-bar').value);
+  console.log('hits: ', hits);
+  if(hits !== undefined) {
+    document.getElementById('content').style.display = 'none';
+    document.getElementById('search-results').style.display = '';
+    var results = document.getElementById('search-results-list');
+    if(hits.length === 0) {
+      results.innerHTML = '<li>No results</li>';
+    } else {
+      results.innerHTML = '';
+      for(var i = 0; i < hits.length; ++i) {
+        var elem = document.createElement('li');
+        elem.innerHTML = '<a href="' + hits[i] + '.html">' + hits[i] + '</a>';
+        results.appendChild(elem);
+      }
+    }
+  }
+});
+    </script>
+  </body>
+</html>

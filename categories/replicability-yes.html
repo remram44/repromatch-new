@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Repromatch</title>
+    <script src="search.js"></script>
+  </head>
+  <body>
+    <div id="search-div" style="display: none;">
+      <form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search..." />
+        <input type="submit" value="Go" />
+      </form>
+    </div>
+    <div id="content">
+
+<h1>Replicability - Yes</h1>
+<ul>
+  
+  <li><a href="../tools/ActivePapers.html">ActivePapers</a></li>
+  
+  <li><a href="../tools/ARE.html">ARE</a></li>
+  
+  <li><a href="../tools/CARE.html">CARE</a></li>
+  
+  <li><a href="../tools/CDE.html">CDE</a></li>
+  
+  <li><a href="../tools/CMake.html">CMake</a>: Given a makefile, a user can re-execute the experiment.</li>
+  
+  <li><a href="../tools/Collage.html">Collage</a></li>
+  
+  <li><a href="../tools/CRIS.html">CRIS</a></li>
+  
+  <li><a href="../tools/crowdLabs.html">crowdLabs</a>: Users can replicate workflows on the Web.</li>
+  
+  <li><a href="../tools/DEEP.html">DEEP</a></li>
+  
+  <li><a href="../tools/Dexy.html">Dexy</a></li>
+  
+  <li><a href="../tools/eScienceCentral.html">eScienceCentral</a></li>
+  
+  <li><a href="../tools/Galaxy.html">Galaxy</a></li>
+  
+  <li><a href="../tools/GenePattern.html">GenePattern</a></li>
+  
+  <li><a href="../tools/HUBZero.html">HUBZero</a></li>
+  
+  <li><a href="../tools/IPython.html">IPython</a>: Computational results can be associated to notebooks and execution sessions, allowing users to repeat past computations and change parameters interactively to get new results.</li>
+  
+  <li><a href="../tools/Kepler.html">Kepler</a></li>
+  
+  <li><a href="../tools/Madagascar.html">Madagascar</a></li>
+  
+  <li><a href="../tools/make.html">make</a>: Given a makefile, a user can re-execute the experiment.</li>
+  
+  <li><a href="../tools/Mathematica.html">Mathematica</a></li>
+  
+  <li><a href="../tools/MATLAB.html">MATLAB</a></li>
+  
+  <li><a href="../tools/Noweb.html">Noweb</a></li>
+  
+  <li><a href="../tools/PASS.html">PASS</a></li>
+  
+  <li><a href="../tools/PTU.html">PTU</a></li>
+  
+  <li><a href="../tools/RCloud.html">RCloud</a></li>
+  
+  <li><a href="../tools/RDataTracker.html">RDataTracker</a>: The tool allows users to re-execute parts of the R script, and also to create checkpoints and restore previous versions.</li>
+  
+  <li><a href="../tools/ReproZip.html">ReproZip</a>: ReproZip provides an easy-to-use command line interface to replicate the experiment.</li>
+  
+  <li><a href="../tools/Sage.html">Sage</a></li>
+  
+  <li><a href="../tools/SCons.html">SCons</a>: Given a script, a user can re-execute the experiment.</li>
+  
+  <li><a href="../tools/SEEK.html">SEEK</a></li>
+  
+  <li><a href="../tools/SOLE.html">SOLE</a>: Only if Web services or virtual machine images are deployed.</li>
+  
+  <li><a href="../tools/Sumatra.html">Sumatra</a></li>
+  
+  <li><a href="../tools/Sweave.html">Sweave</a></li>
+  
+  <li><a href="../tools/Taverna.html">Taverna</a></li>
+  
+  <li><a href="../tools/Trident.html">Trident</a></li>
+  
+  <li><a href="../tools/VCR.html">VCR</a></li>
+  
+  <li><a href="../tools/VisTrails.html">VisTrails</a>: All the parameters and data are saved in the workflow, and can be used to replicate the results.</li>
+  
+  <li><a href="../tools/Web.html">Web</a></li>
+  
+  <li><a href="../tools/Wings.html">Wings</a></li>
+  
+</ul>
+
+    </div>
+    <div id="search-results" style="display: none;">
+      <h1>Search results</h1>
+      <ul id="search-results-list"></ul>
+    </div>
+    <script>
+var searchForm = document.getElementById('search-div').style.display = '';
+document.getElementById('search-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  console.log('searching: ', document.getElementById('search-bar').value);
+  var hits = search(document.getElementById('search-bar').value);
+  console.log('hits: ', hits);
+  if(hits !== undefined) {
+    document.getElementById('content').style.display = 'none';
+    document.getElementById('search-results').style.display = '';
+    var results = document.getElementById('search-results-list');
+    if(hits.length === 0) {
+      results.innerHTML = '<li>No results</li>';
+    } else {
+      results.innerHTML = '';
+      for(var i = 0; i < hits.length; ++i) {
+        var elem = document.createElement('li');
+        elem.innerHTML = '<a href="' + hits[i] + '.html">' + hits[i] + '</a>';
+        results.appendChild(elem);
+      }
+    }
+  }
+});
+    </script>
+  </body>
+</html>

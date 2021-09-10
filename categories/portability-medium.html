@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Repromatch</title>
+    <script src="search.js"></script>
+  </head>
+  <body>
+    <div id="search-div" style="display: none;">
+      <form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search..." />
+        <input type="submit" value="Go" />
+      </form>
+    </div>
+    <div id="content">
+
+<h1>Portability - Medium</h1>
+<ul>
+  
+  <li><a href="../tools/CARE.html">CARE</a>: CARE has a feature known as enhanced kernel compatibility that allows, within certain limits, running an experiment on a kernel older than the one used in the original implementation.</li>
+  
+  <li><a href="../tools/CDE.html">CDE</a>: Re-execution in compatible Linux systems.</li>
+  
+  <li><a href="../tools/PTU.html">PTU</a></li>
+  
+</ul>
+
+    </div>
+    <div id="search-results" style="display: none;">
+      <h1>Search results</h1>
+      <ul id="search-results-list"></ul>
+    </div>
+    <script>
+var searchForm = document.getElementById('search-div').style.display = '';
+document.getElementById('search-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  console.log('searching: ', document.getElementById('search-bar').value);
+  var hits = search(document.getElementById('search-bar').value);
+  console.log('hits: ', hits);
+  if(hits !== undefined) {
+    document.getElementById('content').style.display = 'none';
+    document.getElementById('search-results').style.display = '';
+    var results = document.getElementById('search-results-list');
+    if(hits.length === 0) {
+      results.innerHTML = '<li>No results</li>';
+    } else {
+      results.innerHTML = '';
+      for(var i = 0; i < hits.length; ++i) {
+        var elem = document.createElement('li');
+        elem.innerHTML = '<a href="' + hits[i] + '.html">' + hits[i] + '</a>';
+        results.appendChild(elem);
+      }
+    }
+  }
+});
+    </script>
+  </body>
+</html>

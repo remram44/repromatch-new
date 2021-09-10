@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Repromatch</title>
+    <script src="search.js"></script>
+  </head>
+  <body>
+    <div id="search-div" style="display: none;">
+      <form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search..." />
+        <input type="submit" value="Go" />
+      </form>
+    </div>
+    <div id="content">
+
+<h1>Portability - Low</h1>
+<ul>
+  
+  <li><a href="../tools/ActivePapers.html">ActivePapers</a>: There is no guarantee that dependencies will work across different machines.</li>
+  
+  <li><a href="../tools/Chef.html">Chef</a></li>
+  
+  <li><a href="../tools/CMake.html">CMake</a>: Makefiles can be re-compiled in the same machine to reproduce experiment findings, but portability to other environments cannot be automatically guaranteed without extra work, e.g., unless the user defines explicit commands to be executed in different operating systems and hardware architectures.</li>
+  
+  <li><a href="../tools/Dexy.html">Dexy</a></li>
+  
+  <li><a href="../tools/GenePattern.html">GenePattern</a>: High portability for the Web-based application.</li>
+  
+  <li><a href="../tools/Kepler.html">Kepler</a></li>
+  
+  <li><a href="../tools/LLVM.html">LLVM</a></li>
+  
+  <li><a href="../tools/Madagascar.html">Madagascar</a></li>
+  
+  <li><a href="../tools/make.html">make</a>: Makefiles can be re-compiled in the same machine to reproduce experiment findings, but portability to other environments cannot be automatically guaranteed without extra work, e.g., unless the user defines explicit commands to be executed in different operating systems and hardware architectures.</li>
+  
+  <li><a href="../tools/Noweb.html">Noweb</a></li>
+  
+  <li><a href="../tools/noWorkflow.html">noWorkflow</a></li>
+  
+  <li><a href="../tools/PASS.html">PASS</a></li>
+  
+  <li><a href="../tools/ProvenanceCurious.html">ProvenanceCurious</a></li>
+  
+  <li><a href="../tools/Puppet.html">Puppet</a></li>
+  
+  <li><a href="../tools/Pysa.html">Pysa</a></li>
+  
+  <li><a href="../tools/RDataTracker.html">RDataTracker</a></li>
+  
+  <li><a href="../tools/SCons.html">SCons</a>: The scripts can be re-used in the same machine to reproduce experiment findings, but portability to other environments cannot be automatically guaranteed without extra work, e.g., unless the user takes care of different operating systems and hardware architectures.</li>
+  
+  <li><a href="../tools/Sumatra.html">Sumatra</a>: Sumatra does not offer any particular support for making computations portable: experiments are only guaranteed to be repeated in the original environment.</li>
+  
+  <li><a href="../tools/Sweave.html">Sweave</a></li>
+  
+  <li><a href="../tools/Taverna.html">Taverna</a></li>
+  
+  <li><a href="../tools/Trident.html">Trident</a>: Low portability for the desktop application, and high portability for the Web-based application (requires Silverlight).</li>
+  
+  <li><a href="../tools/VisTrails.html">VisTrails</a></li>
+  
+  <li><a href="../tools/Web.html">Web</a></li>
+  
+  <li><a href="../tools/Wings.html">Wings</a></li>
+  
+</ul>
+
+    </div>
+    <div id="search-results" style="display: none;">
+      <h1>Search results</h1>
+      <ul id="search-results-list"></ul>
+    </div>
+    <script>
+var searchForm = document.getElementById('search-div').style.display = '';
+document.getElementById('search-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  console.log('searching: ', document.getElementById('search-bar').value);
+  var hits = search(document.getElementById('search-bar').value);
+  console.log('hits: ', hits);
+  if(hits !== undefined) {
+    document.getElementById('content').style.display = 'none';
+    document.getElementById('search-results').style.display = '';
+    var results = document.getElementById('search-results-list');
+    if(hits.length === 0) {
+      results.innerHTML = '<li>No results</li>';
+    } else {
+      results.innerHTML = '';
+      for(var i = 0; i < hits.length; ++i) {
+        var elem = document.createElement('li');
+        elem.innerHTML = '<a href="' + hits[i] + '.html">' + hits[i] + '</a>';
+        results.appendChild(elem);
+      }
+    }
+  }
+});
+    </script>
+  </body>
+</html>
