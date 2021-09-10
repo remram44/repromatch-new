@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>A-R-E - Repromatch</title>
-    <script src="search.js"></script>
+    <script src="../search.js"></script>
   </head>
   <body>
     <div id="search-div" style="display: none;">
@@ -26,6 +26,8 @@
       <ul id="search-results-list"></ul>
     </div>
     <script>
+search_init('../');
+
 var searchForm = document.getElementById('search-div').style.display = '';
 document.getElementById('search-form').addEventListener('submit', function(e) {
   e.preventDefault();
@@ -42,7 +44,7 @@ document.getElementById('search-form').addEventListener('submit', function(e) {
       results.innerHTML = '';
       for(var i = 0; i < hits.length; ++i) {
         var elem = document.createElement('li');
-        elem.innerHTML = '<a href="' + hits[i] + '.html">' + hits[i] + '</a>';
+        elem.innerHTML = '<a href="../tools/' + hits[i] + '.html">' + hits[i] + '</a>';
         results.appendChild(elem);
       }
     }
