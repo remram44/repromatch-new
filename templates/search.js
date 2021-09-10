@@ -1,15 +1,15 @@
 var searchIndex = undefined;
 
-(function() {
+function search_init(top_level) {
   var req = new XMLHttpRequest();
   req.responseType = 'json';
-  req.open('GET', '{{ search_index_file }}', true);
+  req.open('GET', top_level + '{{ search_index_file }}', true);
   req.onload = function() {
     console.log('Search index loaded');
     searchIndex = req.response;
   };
   req.send();
-})();
+}
 
 function search(words) {
   if(!searchIndex || !words.length) {
