@@ -22,7 +22,6 @@ replicability: false
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: eucalyptus
 supports_linux: true
 supports_note: 'When deploying the cloud platform, Eucalyptus supports the following
   Linux distributions: CentOS 6 and RHEL 6. Eucalyptus only supports 64-bit architecture.'

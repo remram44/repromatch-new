@@ -19,7 +19,6 @@ replicability: false
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: vagrant
 source: https://github.com/mitchellh/vagrant
 supports_linux: true
 supports_osx: true

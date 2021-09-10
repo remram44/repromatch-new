@@ -20,7 +20,6 @@ replicability: false
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: myexperiment
 source: https://github.com/myExperiment/myExperiment
 supports_linux: false
 supports_osx: false

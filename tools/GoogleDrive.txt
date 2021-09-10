@@ -19,7 +19,6 @@ replicability: false
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: google-drive
 supports_linux: false
 supports_note: Google Drive has also a Desktop application for Windows and OS X.
 supports_osx: true

@@ -23,7 +23,6 @@ replicability: true
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: care
 supports_linux: true
 supports_osx: false
 supports_web_based: false

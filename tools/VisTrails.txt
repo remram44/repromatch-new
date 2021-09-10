@@ -30,7 +30,6 @@ replicability_note: All the parameters and data are saved in the workflow, and c
 representation: true
 representation_descriptive_only: false
 representation_executable: true
-slug: vistrails
 source: https://github.com/VisTrails/VisTrails
 supports_linux: true
 supports_osx: true

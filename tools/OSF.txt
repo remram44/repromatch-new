@@ -19,7 +19,6 @@ replicability: false
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: open-science-framework
 supports_linux: false
 supports_osx: false
 supports_web_based: true

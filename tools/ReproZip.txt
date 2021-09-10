@@ -30,7 +30,6 @@ representation_executable: true
 representation_note: ReproZip creates a configuration file (descriptive-only representation)
   that details all the provenance related to the experiment. Besides, it can create
   a scientific workflow (VisTrails) for the experiment (executable representation).
-slug: reprozip
 source: https://github.com/ViDA-NYU/reprozip
 supports_linux: true
 supports_note: For packing the experiment, ReproZip only supports Linux (since it

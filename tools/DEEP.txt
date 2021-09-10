@@ -22,7 +22,6 @@ replicability: true
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: deep
 supports_linux: false
 supports_note: Not clear which operating systems the tool supports.
 supports_osx: false

@@ -19,7 +19,6 @@ replicability: false
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: mercurial
 supports_linux: true
 supports_osx: true
 supports_web_based: false

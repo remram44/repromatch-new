@@ -20,7 +20,6 @@ replicability: false
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: wrangler
 supports_linux: true
 supports_note: Its Desktop application for deployment supports Linux systems.
 supports_osx: false

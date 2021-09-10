@@ -20,7 +20,6 @@ replicability: false
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: dataverse
 source: https://github.com/IQSS/dataverse
 supports_linux: false
 supports_osx: false

@@ -27,7 +27,6 @@ representation_descriptive_only: false
 representation_executable: true
 representation_note: Makefiles can be used as an executable representation for the
   experiment.
-slug: cmake
 supports_linux: true
 supports_osx: true
 supports_web_based: false

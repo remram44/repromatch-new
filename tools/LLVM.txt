@@ -22,7 +22,6 @@ representation_descriptive_only: true
 representation_executable: false
 representation_note: The execution trace produced is a provenance graph that is loaded
   into SPADE, where it can be managed and queried.
-slug: llvm
 supports_linux: true
 supports_osx: true
 supports_web_based: false

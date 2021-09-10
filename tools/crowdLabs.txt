@@ -23,7 +23,6 @@ replicability_note: Users can replicate workflows on the Web.
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: crowdlabs
 supports_linux: false
 supports_osx: false
 supports_web_based: true

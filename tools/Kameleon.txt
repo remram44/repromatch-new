@@ -20,7 +20,6 @@ replicability: false
 representation: true
 representation_descriptive_only: true
 representation_executable: false
-slug: kameleon
 source: https://github.com/oar-team/kameleon
 supports_linux: true
 supports_osx: false

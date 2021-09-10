@@ -26,7 +26,6 @@ replicability: true
 representation: true
 representation_descriptive_only: false
 representation_executable: true
-slug: taverna
 supports_linux: true
 supports_osx: true
 supports_web_based: false

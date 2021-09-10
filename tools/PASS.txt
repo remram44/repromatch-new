@@ -23,7 +23,6 @@ representation_executable: true
 representation_note: Besides the audit trails (descriptive-only), PASS has a feature
   to generate scripts to reproduce an experiment in the environment in which it was
   originally created and executed.
-slug: pass
 supports_linux: true
 supports_osx: false
 supports_web_based: false

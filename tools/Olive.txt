@@ -20,7 +20,6 @@ replicability: false
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: olive
 supports_linux: true
 supports_note: Only the client software is available; the server is not yet publicly
   released.

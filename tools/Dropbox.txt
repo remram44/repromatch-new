@@ -19,7 +19,6 @@ replicability: false
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: dropbox
 supports_linux: true
 supports_note: Dropbox has Desktop applications for all the platforms.
 supports_osx: true

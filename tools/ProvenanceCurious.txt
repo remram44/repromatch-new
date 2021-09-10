@@ -20,7 +20,6 @@ replicability: false
 representation: true
 representation_descriptive_only: true
 representation_executable: false
-slug: provenancecurious
 source: https://github.com/rezwan4438/ProvenanceCurious
 supports_linux: true
 supports_note: The tool is an Eclipse plugin.

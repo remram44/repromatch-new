@@ -25,7 +25,6 @@ replicability_note: Computational results can be associated to notebooks and exe
 representation: true
 representation_descriptive_only: false
 representation_executable: true
-slug: ipython
 source: https://github.com/ipython/ipython
 supports_linux: true
 supports_osx: true

@@ -21,7 +21,6 @@ representation: true
 representation_descriptive_only: true
 representation_executable: false
 representation_note: The tool generates provenance graphs.
-slug: es3
 supports_linux: true
 supports_osx: false
 supports_web_based: false

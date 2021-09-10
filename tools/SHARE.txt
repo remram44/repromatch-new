@@ -22,7 +22,6 @@ replicability: false
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: share
 supports_linux: false
 supports_osx: false
 supports_web_based: true

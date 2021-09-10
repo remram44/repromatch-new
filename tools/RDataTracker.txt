@@ -24,7 +24,6 @@ representation_descriptive_only: true
 representation_executable: false
 representation_note: RDataTracker creates a provenance graph (DDG) from the execution
   that can be analyzed.
-slug: rdatatracker
 supports_linux: true
 supports_osx: true
 supports_web_based: false

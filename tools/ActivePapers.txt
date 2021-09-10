@@ -21,7 +21,6 @@ replicability: true
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: activepapers
 source: https://bitbucket.org/khinsen/active_papers_py
 supports_linux: true
 supports_osx: true

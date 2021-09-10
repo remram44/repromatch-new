@@ -20,7 +20,6 @@ replicability: false
 representation: false
 representation_descriptive_only: false
 representation_executable: false
-slug: precip
 supports_linux: true
 supports_note: PRECIP is a Python package, so it should work in all the platforms.
   However, this information is not enough clear.

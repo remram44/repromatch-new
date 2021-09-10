@@ -24,7 +24,6 @@ representation_executable: false
 representation_note: noWorkflow creates a provenance graph from the execution that
   can be analyzed. Provenance can also be analyzed by differing multiple executions,
   or using inference queries.
-slug: noworkflow
 supports_linux: true
 supports_osx: true
 supports_web_based: false

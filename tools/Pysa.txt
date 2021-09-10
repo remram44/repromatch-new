@@ -19,7 +19,6 @@ replicability: false
 representation: true
 representation_descriptive_only: true
 representation_executable: false
-slug: pysa
 supports_linux: true
 supports_osx: false
 supports_web_based: false
