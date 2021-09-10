@@ -11,7 +11,7 @@
     {% for category_value, value_name in values -%}
     {%- if not loop.first %}, {% endif -%}
     <a href="categories/{{ category }}-{{ category_value }}.html">{{ value_name }}</a>
-    {% endfor %}
+    {%- endfor %}
   </li>
   {% endfor %}
 </ul>
