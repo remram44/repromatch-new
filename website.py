@@ -13,6 +13,16 @@ DIRECTORY = os.path.dirname(__file__)
 logger = logging.getLogger('website')
 
 
+class InvalidField(ValueError):
+    """An invalid value was found in a tool file."""
+    def __init__(self, filename, field):
+        super(InvalidField, self).__init__(
+            "Invalid value for %s in %s" % (field, filename),
+        )
+        self.filename = filename
+        self.field = field
+
+
 def main():
     logging.basicConfig(level=logging.INFO)
 
@@ -29,8 +39,56 @@ def main():
     )
 
     categories = {
-        'capture': ("Automatic capture", []),
-        'sharing': ("Experiment sharing", []),
+        'capture': ('Provenance Capture', {
+            'no': ('No', []),
+            'yes': ('Yes', []),
+            'os': ('OS-Based', []),
+            'workflow': ('Workflow-Based', []),
+        }),
+        'representation': ('Representation', {
+            'no': ('No', []),
+            'yes': ('Yes', []),
+            'descriptive': ('Descriptive-Only', []),
+            'executable': ('Executable', []),
+        }),
+        'replicability': ('Replicability', {
+            'no': ('No', []),
+            'yes': ('Yes', []),
+        }),
+        'modifiability': ('Modifiability', {
+            'no': ('No', []),
+            'yes': ('Yes', []),
+        }),
+        'portability': ('Portability', {
+            'low': ('Low', []),
+            'medium': ('Medium', []),
+            'high': ('High', []),
+            'none': ('None', []),
+        }),
+        'longevity': ('Longevity', {
+            'no': ('No', []),
+            'yes': ('Yes', []),
+            'archiving': ('Archiving', []),
+            'upgrading': ('Upgrading', []),
+        }),
+        'document-linkage': ('Document Linkage', {
+            'no': ('No', []),
+            'yes': ('Yes', []),
+            'by-ref': ('By Reference', []),
+            'inline': ('Inline', []),
+        }),
+        'sharing': ('Experiment Sharing', {
+            'yes': ('Yes', []),
+            'no': ('No', []),
+            'archival': ('By Reference', []),
+            'hosted-execution': ('Inline', []),
+        }),
+        'os': ('OS Support', {
+            'macos': ('macOS', []),
+            'windows': ('Windows', []),
+            'linux': ('Linux', []),
+            'web': ('Web-Based', []),
+        }),
     }
 
     # Search index
@@ -77,10 +135,112 @@ def main():
                 ))
 
             # Add to categories
-            if meta.get('capture'):
-                categories['capture'][1].append((tool_basename, meta.get('capture_note')))
-            if meta.get('experiment_sharing'):
-                categories['sharing'][1].append((tool_basename, None))
+            def categorize(field, options):
+                field_value = meta.get(field)
+                try:
+                    opt = options[field_value]
+                except KeyError:
+                    raise InvalidField(tool_file, field_value)
+                if opt is None:
+                    return
+                category, category_value, note = opt
+                if note is not None:
+                    note = meta.get(note)
+                categories[category][1][category_value][1].append(
+                    (tool_basename, note),
+                )
+
+            categorize('capture', {
+                True: ('capture', 'yes', 'capture_note'),
+                False: ('capture', 'no', 'capture_note'),
+            })
+            categorize('capture_os', {
+                True: ('capture', 'os', 'capture_note'),
+                False: None,
+            })
+            categorize('capture_workflow', {
+                True: ('capture', 'workflow', 'capture_note'),
+                False: None,
+            })
+            # TODO: capture_code, capture_data?
+            categorize('representation', {
+                True: ('representation', 'yes', 'representation_note'),
+                False: ('representation', 'no', 'representation_note'),
+            })
+            categorize('representation_descriptive_only', {
+                True: ('representation', 'descriptive', 'representation_note'),
+                False: None,
+            })
+            categorize('representation_executable', {
+                True: ('representation', 'executable', 'representation_note'),
+                False: None,
+            })
+            categorize('replicability', {
+                True: ('replicability', 'yes', 'replicability_note'),
+                False: ('replicability', 'no', 'replicability_note'),
+            })
+            categorize('modifiability', {
+                True: ('modifiability', 'yes', 'modifiability_note'),
+                False: ('modifiability', 'no', 'modifiability_note'),
+            })
+            categorize('portability', {
+                'LOW': ('portability', 'low', 'portability_note'),
+                'MEDIUM': ('portability', 'medium', 'portability_note'),
+                'HIGH': ('portability', 'high', 'portability_note'),
+                'NONE': ('portability', 'none', 'portability_note'),
+            })
+            categorize('longevity', {
+                True: ('longevity', 'yes', None),
+                False: ('longevity', 'no', None),
+            })
+            categorize('longevity_archiving', {
+                True: ('longevity', 'archiving', None),
+                False: None,
+            })
+            categorize('longevity_upgrading', {
+                True: ('longevity', 'upgrading', None),
+                False: None,
+            })
+            categorize('document_linkage', {
+                True: ('document-linkage', 'yes', None),
+                False: ('document-linkage', 'no', None),
+            })
+            categorize('document_linkage_by_reference', {
+                True: ('document-linkage', 'by-ref', None),
+                False: None,
+            })
+            categorize('document_linkage_inline', {
+                True: ('document-linkage', 'inline', None),
+                False: None,
+            })
+            categorize('experiment_sharing', {
+                True: ('sharing', 'yes', None),
+                False: ('sharing', 'no', None),
+            })
+            categorize('experiment_sharing_archival', {
+                True: ('sharing', 'archival', None),
+                False: None,
+            })
+            categorize('experiment_sharing_archival', {
+                True: ('sharing', 'hosted-execution', None),
+                False: None,
+            })
+            categorize('supports_linux', {
+                True: ('os', 'linux', 'supports_note'),
+                False: None,
+            })
+            categorize('supports_osx', {
+                True: ('os', 'macos', 'supports_note'),
+                False: None,
+            })
+            categorize('supports_web_based', {
+                True: ('os', 'web', 'supports_note'),
+                False: None,
+            })
+            categorize('supports_windows', {
+                True: ('os', 'windows', 'supports_note'),
+                False: None,
+            })
 
             # Add to search index
             keywords = {tool_basename}
@@ -95,19 +255,29 @@ def main():
     # Generate category pages
     logger.info("Creating category pages")
     category_template = template_env.get_template('category.html')
-    for shortname, (name, tools) in categories.items():
-        with open(os.path.join(output_dir, '{0}.html'.format(shortname)), 'w') as f_out:
-            f_out.write(category_template.render(
-                category=name,
-                tools=sorted(tools, key=lambda p: p[0].lower()),
-            ))
+    for category, (cat_name, values) in categories.items():
+        for category_value, (catval_name, tools) in values.items():
+            shortname = '{0}-{1}.html'.format(category, category_value)
+            with open(os.path.join(output_dir, shortname), 'w') as f_out:
+                f_out.write(category_template.render(
+                    category=cat_name,
+                    category_value=catval_name,
+                    tools=sorted(tools, key=lambda p: p[0].lower()),
+                ))
 
     # Generate index
     logger.info("Creating index page")
     index_template = template_env.get_template('index.html')
     with open(os.path.join(output_dir, 'index.html'), 'w') as f_out:
         f_out.write(index_template.render(
-            categories=[(shortname, name) for shortname, (name, tools) in categories.items()],
+            categories=[
+                (
+                    category,
+                    name,
+                    [(value, catval_name) for value, (catval_name, tools) in values.items()],
+                )
+                for category, (name, values) in categories.items()
+            ],
         ))
 
     # Remove previous search indexes

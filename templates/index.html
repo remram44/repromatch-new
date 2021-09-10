@@ -5,8 +5,14 @@
 
 <h2>Categories</h2>
 <ul>
-  {% for shortname, name in categories %}
-  <li><a href="{{ shortname }}.html">{{ name }}</a></li>
+  {% for category, name, values in categories %}
+  <li>
+    {{ name }}:
+    {% for category_value, value_name in values -%}
+    {%- if not loop.first %}, {% endif -%}
+    <a href="{{ category }}-{{ category_value }}.html">{{ value_name }}</a>
+    {% endfor %}
+  </li>
   {% endfor %}
 </ul>
 {% endblock %}
